@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .base-container {
+    @apply px-[24px] md:px-[70px];
+  }
+
+  .heading {
+    @apply text-[58px] font-bold;
+  }
+
+  .burger-menu {
+    @apply w-[36px] h-[27px] cursor-pointer lg:hidden;
+  }
+
+  .download-app {
+    @apply font-inter text-white font-bold tracking-tighter px-[20px] py-[10px] rounded-full bg-red;
+  }
+
+  #menu-list li {
+    @apply font-inter lg:text-[14px] xl:text-[18px];
+  }
+
+  .hero-sec-container {
+    @apply base-container w-full flex flex-col items-center md:flex-row-reverse md:-mt-24 mb-[98px] md:mb-[126px];
+  }
+
+  .heart-container {
+    @apply flex gap-x-[6px] items-center px-[5px] py-[6px] bg-[#f547481a] w-max rounded-full justify-center mt-[63px] mb-[20px];
+  }
+
+  .search-input {
+    @apply absolute top-0 right-0 w-full h-full pl-20 rounded-full border-[0.5px] border-[#191919] placeholder:opacity-50 placeholder:font-inter placeholder:text-[18px];
+  }
+
+  .search-input-right-icon {
+    @apply absolute right-2 top-[50%] -translate-y-[50%];
+  }
+
+  .search-input-left-icon {
+    @apply absolute left-4 top-[50%] -translate-y-[50%] w-[24px];
+  }
+
+  .offer-container {
+    @apply w-full text-center flex flex-col items-center gap-y-[15px];
+  }
+
+  .offer-sub-text {
+    @apply text-[18px] font-inter text-black opacity-60 w-[380px] md:w-[856px];
+  }
+
+  .offer-every-box {
+    @apply flex flex-col w-full md:w-1/5 relative shadow-sm hover:-translate-y-2 transition duration-150 hover:shadow-xl shadow-gray-200 rounded-[20px];
+  }
+
+  .offer-every-head-img {
+    @apply absolute top-6 left-[50%] -translate-x-[50%];
+  }
+
+  .offer-every-box-price {
+    @apply absolute top-[170px] right-[90px] bg-orange border-2 border-white w-[60px] h-[60px] rounded-full flex justify-center items-center;
+  }
+
+  .offer-text-box {
+    @apply bg-gradient-to-b from-[#fff] to-[#f547477e] -mt-20 rounded-[20px] pb-[40px] flex flex-col items-center gap-y-2;
+  }
+
+  .offer-box-point {
+    @apply flex items-center mb-[30px] mt-24 px-[70px] justify-around gap-x-2;
+  }
+
+  .offer-food-name-style {
+    @apply mb-[16px] text-[24px] font-sofia font-bold text-red px-5;
+  }
+
+  .offer-box-btn {
+    @apply text-[18px] text-white px-[20px] py-[10px] bg-red rounded-full absolute top-[95%] hover:bg-rose-500 transition duration-200;
+  }
+
+  .all-offer-container {
+    @apply w-full flex flex-col flex-wrap md:flex-row md:gap-x-[50px] gap-y-10 justify-center items-center mt-[66px];
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
